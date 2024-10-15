@@ -47,10 +47,13 @@ def main(argv=None):
     args = embodied.Config(logdir=config.logdir, **config.train)
     args = args.update(expl_until=args.expl_until // config.env.repeat)
 
+    # Присваиваем переменной logdir путь из экземпляра config
     logdir = embodied.Path(config.logdir)
+    # Присваиваем переменной step счетчик взаимодействий сл средой
     step = embodied.Counter()
 
     outdir = logdir
+    # Присваиваем переменной multiplier множитель (количество повторений)
     multiplier = config.env.repeat
     if config.run == 'acting':
         outdir /= f'worker{parsed.worker}'
