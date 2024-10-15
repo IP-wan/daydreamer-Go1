@@ -46,6 +46,7 @@ def main(argv=None):
     # Присваиваем переменной args путь к директории logdir и конфигурационные данные для тренировки
     args = embodied.Config(logdir=config.logdir, **config.train)
     args = args.update(expl_until=args.expl_until // config.env.repeat)
+    print(config)
 
     # Присваиваем переменной logdir путь из экземпляра config
     logdir = embodied.Path(config.logdir)
@@ -61,6 +62,7 @@ def main(argv=None):
     elif config.run == 'learning':
         outdir /= 'learner'
         multiplier = 1
+    # Выводит лог-информацию в консоль и в файлы
     logger = embodied.Logger(step, [
         embodied.logger.TerminalOutput(config.filter),
         embodied.logger.JSONLOutput(outdir, 'metrics.jsonl'),
