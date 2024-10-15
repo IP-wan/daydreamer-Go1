@@ -1,0 +1,706 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="7dsw3DdcGrztaMBzmiR_">
+    <mxGraphModel dx="5957" dy="4790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aKsn7TsrEUGzSsvcS5hA-1" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); line-height: 70%;&quot;&gt;&lt;p style=&quot;font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 98, 122);&quot;&gt;main&lt;/span&gt;(&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;argv&lt;/span&gt;=&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;None&lt;/span&gt;):&lt;/font&gt;&lt;/p&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;br&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="800" y="200" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aKsn7TsrEUGzSsvcS5hA-2" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); line-height: 120%;&quot;&gt;&lt;pre style=&quot;font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;p style=&quot;text-align: justify; line-height: 70%; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Courier New&quot;&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 98, 122);&quot;&gt;make_replay&lt;/span&gt;(&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;config&lt;/span&gt;, &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;directory&lt;/span&gt;=&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;None&lt;/span&gt;,&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify; line-height: 70%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Courier New&quot;&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;is_eval&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 51, 179);&quot;&gt;False&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;remote_addr&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 51, 179);&quot;&gt;None&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify; line-height: 70%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Courier New&quot;&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;server_port&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 51, 179);&quot;&gt;None&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;**kwargs&lt;/span&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;):&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="200" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aKsn7TsrEUGzSsvcS5hA-3" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Agent&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="-120" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-1" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Optimizer&lt;/span&gt;(Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="2350" y="-520" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aKsn7TsrEUGzSsvcS5hA-3" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="260" as="sourcePoint" />
+            <mxPoint x="1230" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-7" value="embodied/core/flags.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Flags&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="40" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="400" as="sourcePoint" />
+            <mxPoint x="1120" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-9" value="embodied/core/config.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Config&lt;/span&gt;(&lt;span style=&quot;color:#000080;&quot;&gt;dict&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="200" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-9" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="560" as="sourcePoint" />
+            <mxPoint x="1130" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-11" value="embodied/core/path.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Path&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1640" y="360" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-12" value="embodied/core/counter.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Counter&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="520" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-11" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="570" as="sourcePoint" />
+            <mxPoint x="1070" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1320" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-12" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="580" as="sourcePoint" />
+            <mxPoint x="1070" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-22" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1240" y="680" width="320" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-15" value="embodied/core/logger.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Logger&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="zPKP_tyVnjG1dPbWuMaM-22" vertex="1">
+          <mxGeometry width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-19" value="embodied/core/logger.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;TerminalOutput&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="zPKP_tyVnjG1dPbWuMaM-22" vertex="1">
+          <mxGeometry y="160" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-20" value="embodied/core/logger.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;JSONLOutput&lt;/span&gt;(AsyncOutput):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="zPKP_tyVnjG1dPbWuMaM-22" vertex="1">
+          <mxGeometry y="320" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-21" value="embodied/core/logger.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;TensorBoardOutput&lt;/span&gt;(AsyncOutput):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="zPKP_tyVnjG1dPbWuMaM-22" vertex="1">
+          <mxGeometry y="480" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-23" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="zPKP_tyVnjG1dPbWuMaM-22" source="zPKP_tyVnjG1dPbWuMaM-21" target="zPKP_tyVnjG1dPbWuMaM-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-220" y="400" as="sourcePoint" />
+            <mxPoint x="-170" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-80" y="540" />
+              <mxPoint x="-80" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="900" as="sourcePoint" />
+            <mxPoint x="1070" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-25" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="1060" as="sourcePoint" />
+            <mxPoint x="1070" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.859;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="990" as="sourcePoint" />
+            <mxPoint x="1070" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-27" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/envs/__init__.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8); line-height: 70%;&quot;&gt;&lt;pre style=&quot;text-align: justify; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;load_env&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;task&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;amount&lt;/span&gt;=&lt;span style=&quot;color:#1750eb;&quot;&gt;1&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;text-align: justify; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;parallel&lt;/span&gt;=&lt;span style=&quot;color:#067d17;&quot;&gt;&#39;none&#39;&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;daemon&lt;/span&gt;=&lt;span style=&quot;color:#0033b3;&quot;&gt;False&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;text-align: justify; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; line-height: 70%;&quot;&gt;restart&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 51, 179);&quot;&gt;False&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;seed&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 51, 179);&quot;&gt;None&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;kbreset&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 51, 179);&quot;&gt;False&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;text-align: justify; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; line-height: 70%;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;**kwargs&lt;/span&gt;&lt;span style=&quot;font-size: 9.8pt; white-space: normal;&quot;&gt;):&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="800" y="920" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.728;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-27" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1033" y="590" as="sourcePoint" />
+            <mxPoint x="985" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="270" as="sourcePoint" />
+            <mxPoint x="770" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-30" value="embodied/run/train.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;train&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;agent&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;env&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;replay&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;logger&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;args&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="360" y="920" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-31" value="embodied/run/train_eval.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;train_eval&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;agent&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;train_env&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;eval_env&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;train_replay&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;eval_replay&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;logger&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;args&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="360" y="760" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-34" value="embodied/run/train_fixed_eval.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;train_fixed_eval&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;agent&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;env&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;train_replay&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;eval_replay&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;logger&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;args&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1080" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-35" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="820" as="sourcePoint" />
+            <mxPoint x="690" y="1320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="820" />
+              <mxPoint x="740" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-36" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="990" as="sourcePoint" />
+            <mxPoint x="740" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.544;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="920" as="sourcePoint" />
+            <mxPoint x="790" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-39" value="embodied/run/learning.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;learning&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;agent&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;train_replay&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;eval_replay&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;logger&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;args&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1240" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-40" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="1140" as="sourcePoint" />
+            <mxPoint x="740" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-41" value="embodied/run/acting.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;acting&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;agent&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;env&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;replay&lt;/span&gt;, &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#000000;&quot;&gt;logger&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;actordir&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;args&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1400" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-42" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: normal;&quot;&gt;embodied/replay/store.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;StoreClient&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="-440" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-45" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: normal;&quot;&gt;embodied/replay/store.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;CkptRAMStore&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="-280" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-46" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: normal;&quot;&gt;embodied/replay/store.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;RAMStore&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="-120" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-47" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: normal;&quot;&gt;embodied/replay/store.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;StoreServer&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="40" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-48" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-47" target="zPKP_tyVnjG1dPbWuMaM-42" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" as="sourcePoint" />
+            <mxPoint x="340" y="-50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="100" />
+              <mxPoint x="280" y="-380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-49" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-45" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="-220" as="sourcePoint" />
+            <mxPoint x="340" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-50" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="-60.5" as="sourcePoint" />
+            <mxPoint x="210" y="-60.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-51" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="-160" as="sourcePoint" />
+            <mxPoint x="340" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-52" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(8, 8, 8); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; white-space: normal;&quot;&gt;embodied/replay/fixed_length.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;FixedLength&lt;/span&gt;(embodied.Replay):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="240" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-53" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/replay/consecutive.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Consecutive&lt;/span&gt;(embodied.Replay):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="400" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-54" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/replay/prioritized.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Prioritized&lt;/span&gt;(embodied.Replay):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="560" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-55" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.009;entryY=0.608;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="300" as="sourcePoint" />
+            <mxPoint x="260" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-56" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.044;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="467" as="sourcePoint" />
+            <mxPoint x="397" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.194;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="623" as="sourcePoint" />
+            <mxPoint x="414" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-58" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.007;entryY=0.841;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="aKsn7TsrEUGzSsvcS5hA-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1760" y="360" as="sourcePoint" />
+            <mxPoint x="1810" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1760" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-60" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;WorldModel&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1860" y="-510" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-60" target="aKsn7TsrEUGzSsvcS5hA-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1775" y="-110" as="sourcePoint" />
+            <mxPoint x="1825" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-62" value="embodied/agents/dreamerv2plus/behaviors.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Greedy&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1837" y="-250" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-64" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;MultiEncoder&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="-370" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-66" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;RSSM&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="-530" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-67" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;MLP&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="-690" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-68" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-size: 13px;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="4230" y="-1140" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-70" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1650" y="-472" as="sourcePoint" />
+            <mxPoint x="1680" y="-472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-71" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-60" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2310" y="-340" as="sourcePoint" />
+            <mxPoint x="1490" y="-450" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-72" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;AutoAdapt&lt;/span&gt;(Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="2350" y="-360" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-73" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2350" y="-280.00000000000006" as="sourcePoint" />
+            <mxPoint x="2350" y="-460.04" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2310" y="-280.04" />
+              <mxPoint x="2310" y="-370.04" />
+              <mxPoint x="2310" y="-460.04" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-74" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ImagActorCritic&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="-720" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-75" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-74" target="zPKP_tyVnjG1dPbWuMaM-62" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1760" y="-150" as="sourcePoint" />
+            <mxPoint x="2720" y="-240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2720" y="-720" />
+              <mxPoint x="2720" y="-160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-76" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-67" target="zPKP_tyVnjG1dPbWuMaM-74" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="-560" as="sourcePoint" />
+            <mxPoint x="2200" y="-240" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-77" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-74" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2310" y="-370" as="sourcePoint" />
+            <mxPoint x="1810" y="-200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-78" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Normalize&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="2350" y="-680" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-79" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-78" target="zPKP_tyVnjG1dPbWuMaM-74" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1760" y="-150" as="sourcePoint" />
+            <mxPoint x="1810" y="-200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-81" value="" style="endArrow=none;html=1;rounded=0;entryX=1.002;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1653" y="-320" as="sourcePoint" />
+            <mxPoint x="1730" y="-640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1680" y="-320" />
+              <mxPoint x="1680" y="-616" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-84" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.316;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-60" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1680" y="-472" as="sourcePoint" />
+            <mxPoint x="2230" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-85" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;VFunction&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="-920" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-86" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-85" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1510" y="-690" as="sourcePoint" />
+            <mxPoint x="1560" y="-740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-87" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-85" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2670" y="-470" as="sourcePoint" />
+            <mxPoint x="2720" y="-520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2760" y="-470" />
+              <mxPoint x="2760" y="-870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-88" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;QFunction&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="-1080" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-89" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.007;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-88" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1450" y="-690" as="sourcePoint" />
+            <mxPoint x="1500" y="-740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-90" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-88" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2760" y="-870" as="sourcePoint" />
+            <mxPoint x="2810" y="-920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2760" y="-1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-91" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/agent.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;TwinQFunction&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="-1240" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-92" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2760" y="-1020" as="sourcePoint" />
+            <mxPoint x="2160" y="-1170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2760" y="-1180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-93" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-91" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1360" y="-690" as="sourcePoint" />
+            <mxPoint x="1748" y="-1008" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-94" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-62" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1560" y="-30" as="sourcePoint" />
+            <mxPoint x="1610" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-95" value="embodied/agents/dreamerv2plus/behaviors.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;KnownReward&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="-80" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-96" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-95" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2160" y="-810" as="sourcePoint" />
+            <mxPoint x="2840" y="-590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2840" y="-810" />
+              <mxPoint x="2830" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-98" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-95" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2720" y="-160" as="sourcePoint" />
+            <mxPoint x="2050" y="-320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2720" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-99" value="embodied/agents/dreamerv2plus/behaviors.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Random&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="1960" y="560" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-100" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;OneHotDist&lt;/span&gt;(tfd.OneHotCategorical):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="2443" y="560" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-101" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-100" target="zPKP_tyVnjG1dPbWuMaM-99" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2123" y="810" as="sourcePoint" />
+            <mxPoint x="2173" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-102" value="embodied/agents/dreamerv2plus/behaviors.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Explore&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="80" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-103" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-102" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2720" y="-60" as="sourcePoint" />
+            <mxPoint x="2650" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2720" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-104" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-102" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2830" y="-30" as="sourcePoint" />
+            <mxPoint x="2583" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2830" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-105" value="embodied/agents/dreamerv2plus/behaviors.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;DisagWhen&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="230" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-106" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2720" y="110" as="sourcePoint" />
+            <mxPoint x="2480" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2720" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-107" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2830" y="170" as="sourcePoint" />
+            <mxPoint x="2760" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2830" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-108" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.924;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-100" target="zPKP_tyVnjG1dPbWuMaM-105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2000" y="180" as="sourcePoint" />
+            <mxPoint x="2050" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-109" value="embodied/agents/dreamerv2plus/expl.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Disag&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="3030" y="-490" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-110" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-109" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2670" y="-420" as="sourcePoint" />
+            <mxPoint x="2720" y="-470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.991;entryY=0.64;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-111" target="zPKP_tyVnjG1dPbWuMaM-109" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-111" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Input&lt;/span&gt;:&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="3680" y="-473" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-114" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.04;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.312;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-67" target="zPKP_tyVnjG1dPbWuMaM-109" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="-835" as="sourcePoint" />
+            <mxPoint x="1260" y="-885" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1350" y="-1320" />
+              <mxPoint x="3140" y="-1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-115" value="embodied/agents/dreamerv2plus/expl.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;LatentVAE&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="3043" y="-140" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-116" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2763" y="640" as="sourcePoint" />
+            <mxPoint x="3040" y="-40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-117" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-115" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3140" y="-1310" as="sourcePoint" />
+            <mxPoint x="3570" y="-500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3570" y="-1310" />
+              <mxPoint x="3570" y="-110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-118" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-115" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2310" y="-300" as="sourcePoint" />
+            <mxPoint x="3060" y="-390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2250" y="-300" />
+              <mxPoint x="2250" y="-190" />
+              <mxPoint x="2940" y="-200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-119" value="embodied/agents/dreamerv2plus/expl.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;CtrlDisag&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="3040" y="60" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-120" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-119" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2670" y="-420" as="sourcePoint" />
+            <mxPoint x="3030" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-121" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-119" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3570" y="-110" as="sourcePoint" />
+            <mxPoint x="2970" y="-40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3570" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-122" value="embodied/agents/dreamerv2plus/expl.py&lt;div&gt;&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;PBE&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="3043" y="240" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zPKP_tyVnjG1dPbWuMaM-123" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-122" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3840" y="-350" as="sourcePoint" />
+            <mxPoint x="2970" y="-40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3840" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-1" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;cast_to_compute&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;values&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-780" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-2" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;def &lt;/span&gt;&lt;span style=&quot;color:#00627a;&quot;&gt;scan&lt;/span&gt;(&lt;span style=&quot;color:#000000;&quot;&gt;fn&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;inputs&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;start&lt;/span&gt;,&lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt; &lt;span style=&quot;color:#000000;&quot;&gt;static&lt;/span&gt;=&lt;span style=&quot;color:#0033b3;&quot;&gt;True&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;reverse&lt;/span&gt;=&lt;span style=&quot;color:#0033b3;&quot;&gt;False&lt;/span&gt;, &lt;span style=&quot;color:#000000;&quot;&gt;axis&lt;/span&gt;=&lt;span style=&quot;color:#1750eb;&quot;&gt;0&lt;/span&gt;):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-620" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-3" value="" style="endArrow=none;html=1;rounded=0;entryX=1.013;entryY=0.606;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="XWYOcm-YwQXuxwpqE8Ke-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="-707" as="sourcePoint" />
+            <mxPoint x="1110" y="-527" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="-707" />
+              <mxPoint x="1080" y="-547" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="-620" as="sourcePoint" />
+            <mxPoint x="1328" y="-480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-5" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ImageEncoderSimple&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-440" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-6" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/tfutils.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ImageEncoderResnet&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-280" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.014;entryY=0.664;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-67" target="zPKP_tyVnjG1dPbWuMaM-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="-440" as="sourcePoint" />
+            <mxPoint x="1230" y="-380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1280" y="-630" />
+              <mxPoint x="1280" y="-290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-8" value="" style="endArrow=none;html=1;rounded=0;entryX=1.008;entryY=0.605;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="XWYOcm-YwQXuxwpqE8Ke-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="-370" as="sourcePoint" />
+            <mxPoint x="1080" y="-210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="-370" />
+              <mxPoint x="1080" y="-207" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.004;entryY=0.867;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="-266" as="sourcePoint" />
+            <mxPoint x="1130" y="-335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-11" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;MultiDecoder&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-950" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-67" target="XWYOcm-YwQXuxwpqE8Ke-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="-670" as="sourcePoint" />
+            <mxPoint x="1600" y="-490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-16" value="" style="endArrow=none;html=1;rounded=0;exitX=-0.009;exitY=0.605;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="XWYOcm-YwQXuxwpqE8Ke-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="-330" as="sourcePoint" />
+            <mxPoint x="720" y="-380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="-207" />
+              <mxPoint x="680" y="-380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="XWYOcm-YwQXuxwpqE8Ke-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="-280" as="sourcePoint" />
+            <mxPoint x="570" y="-540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="-280" />
+              <mxPoint x="640" y="-890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-18" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ImageDecoderSimple&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-1080" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-19" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;ImageDecoderResnet&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-920" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" target="zPKP_tyVnjG1dPbWuMaM-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3800" y="-480" as="sourcePoint" />
+            <mxPoint x="1180" y="-1410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3800" y="-1400" />
+              <mxPoint x="1330" y="-1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-21" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;DistLayer&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="3070" y="560" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.995;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.004;entryY=0.653;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zPKP_tyVnjG1dPbWuMaM-100" target="XWYOcm-YwQXuxwpqE8Ke-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2510" y="400" as="sourcePoint" />
+            <mxPoint x="2560" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-23" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Linear&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="250" y="-750" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="XWYOcm-YwQXuxwpqE8Ke-1" target="XWYOcm-YwQXuxwpqE8Ke-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="-310" as="sourcePoint" />
+            <mxPoint x="1120" y="-360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-28" value="&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#080808&quot;&gt;embodied/agents/dreamerv2plus/nets.py&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;color: rgb(8, 8, 8);&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;div&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#0033b3;&quot;&gt;class &lt;/span&gt;&lt;span style=&quot;color:#000000;&quot;&gt;Norm&lt;/span&gt;(tfutils.Module):&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-570" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.468;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="XWYOcm-YwQXuxwpqE8Ke-28" target="XWYOcm-YwQXuxwpqE8Ke-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="-710" as="sourcePoint" />
+            <mxPoint x="1120" y="-760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-34" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;остальсь не описанные блоки&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="3880" y="510" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XWYOcm-YwQXuxwpqE8Ke-35" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;блок закрыт&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="3880" y="420" width="350" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
