@@ -73,8 +73,10 @@ def main(argv=None):
     cleanup = []
     try:
         config = config.update({'env.seed': hash((config.seed, parsed.worker))})
+
         env = embodied.envs.load_env(
             config.task, mode='train', logdir=logdir, **config.env)
+        print(env)
         agent = agnt.Agent(env.obs_space, env.act_space, step, config)
         cleanup.append(env)
 
