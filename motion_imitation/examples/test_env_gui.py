@@ -13,7 +13,7 @@ from tqdm import tqdm
 import pybullet as p  # pytype: disable=import-error
 
 from motion_imitation.envs import env_builder
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1
 from motion_imitation.robots import laikago
 from motion_imitation.robots import robot_config
 

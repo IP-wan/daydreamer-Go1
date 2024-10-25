@@ -27,7 +27,7 @@ from mpc_controller import raibert_swing_leg_controller
 from mpc_controller import torque_stance_leg_controller_quadprog as torque_stance_leg_controller
 
 
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1
 from motion_imitation.robots import robot_config
 from motion_imitation.robots.gamepad import gamepad_reader
 
@@ -166,7 +166,7 @@ def main(argv):
 
   # Construct robot class:
   if FLAGS.use_real_robot:
-    from motion_imitation.robots import a1_robot
+    from motion_imitation.robots import go1_robot
     robot = a1_robot.A1Robot(
         pybullet_client=p,
         motor_control_mode=robot_config.MotorControlMode.HYBRID,

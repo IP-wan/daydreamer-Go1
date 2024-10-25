@@ -16,7 +16,7 @@
 import numpy as np
 from pybullet_utils import transformations
 
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1
 from motion_imitation.utilities import motion_data
 from motion_imitation.utilities import pose3d
 
@@ -157,7 +157,7 @@ class ResetTask(object):
 
     ref_base_pos = np.array(STANDING_POSE[:pos_size])
     ref_base_rot = np.array(STANDING_POSE[pos_size:(pos_size + rot_size)])
-    rel_feet_pos_ref = a1.foot_positions_in_base_frame(ref_joint_angles)
+    rel_feet_pos_ref = go1.foot_positions_in_base_frame(ref_joint_angles)
     rel_feet_pos_robot = self._env.robot.GetFootPositionsInBaseFrame()
     end_eff_err = 0
 

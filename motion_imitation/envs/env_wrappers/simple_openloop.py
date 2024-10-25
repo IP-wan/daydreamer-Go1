@@ -31,7 +31,7 @@ import numpy as np
 
 from motion_imitation.robots import laikago_pose_utils
 from motion_imitation.robots import minitaur_pose_utils
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1
 
 class MinitaurPoseOffsetGenerator(object):
   """A trajectory generator that return a constant leg pose."""
@@ -175,7 +175,7 @@ class A1PoseOffsetGenerator(object):
     Returns:
       A numpy array. The desired motor angles.
     """
-    return a1.unnormalize_action(input_action)
+    return go1.unnormalize_action(input_action)
 
   def get_observation(self, input_observation):
     """Get the trajectory generator's observation."""

@@ -14,7 +14,7 @@ os.sys.path.insert(0, grandparentdir)
 
 from absl import app
 from absl import flags
-from motion_imitation.robots import a1_robot
+from motion_imitation.robots import go1_robot
 import pybullet
 import pybullet_data
 from pybullet_utils import bullet_client

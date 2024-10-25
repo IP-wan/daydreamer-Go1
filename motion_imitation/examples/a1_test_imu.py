@@ -21,8 +21,8 @@ import time
 from tqdm import tqdm
 
 from motion_imitation.envs import env_builder
-from motion_imitation.robots import a1_robot
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1_robot
+from motion_imitation.robots import go1
 from motion_imitation.robots import robot_config
 FREQ = 0.5
 

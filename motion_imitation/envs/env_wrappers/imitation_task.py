@@ -30,7 +30,7 @@ import os
 import numpy as np
 
 from motion_imitation.envs.env_wrappers import imitation_terminal_conditions
-from motion_imitation.robots import a1
+from motion_imitation.robots import go1
 from motion_imitation.utilities import pose3d
 from motion_imitation.utilities import motion_data
 from motion_imitation.utilities import motion_util
@@ -396,7 +396,7 @@ class ImitationTask(object):
   def _calc_reward_end_effector_A1(self):
     """Get the end effector reward for sim or real A1 robot."""
     ref_joint_angles = self.get_active_motion().get_frame_joints(self._ref_pose)
-    rel_feet_pos_ref = a1.foot_positions_in_base_frame(ref_joint_angles)
+    rel_feet_pos_ref = go1.foot_positions_in_base_frame(ref_joint_angles)
     rel_feet_pos_robot = self._env.robot.GetFootPositionsInBaseFrame()
     end_eff_err = 0
     for rel_foot_pos_ref, rel_foot_pos_robot in zip(rel_feet_pos_ref,

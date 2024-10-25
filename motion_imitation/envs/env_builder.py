@@ -23,7 +23,7 @@ import numpy as np
 from motion_imitation.envs import locomotion_gym_config, locomotion_gym_env
 from motion_imitation.envs.env_wrappers import observation_dictionary_to_array_wrapper, simple_openloop, simple_forward_task, trajectory_generator_wrapper_env, rma_task
 from motion_imitation.envs.sensors import robot_sensors
-from motion_imitation.robots import a1, a1_robot
+from motion_imitation.robots import go1, go1_robot
 
 def build_env(enable_rendering=False,
               num_action_repeat=20,
@@ -44,16 +44,16 @@ def build_env(enable_rendering=False,
   robot_kwargs = {"self_collision_enabled": False}
 
   if use_real_robot:
-    robot_class = a1_robot.A1Robot
+    robot_class = go1_robot.A1Robot
   else:
-    robot_class = a1.A1
+    robot_class = go1.Go1
 
   if use_real_robot or realistic_sim:
     robot_kwargs["reset_func_name"] = "_SafeJointsReset"
-    robot_kwargs["velocity_source"] = a1.VelocitySource.IMU_FOOT_CONTACT
+    robot_kwargs["velocity_source"] = go1.VelocitySource.IMU_FOOT_CONTACT
   else:
     robot_kwargs["reset_func_name"] = "_PybulletReset"
-  num_motors = a1.NUM_MOTORS
+  num_motors = go1.NUM_MOTORS
   # traj_gen = simple_openloop.A1PoseOffsetGenerator(
   #     action_limit=np.array([0.802851455917, 4.18879020479, -0.916297857297] *
   #                           4) - np.array([0, 0.9, -1.8] * 4))
